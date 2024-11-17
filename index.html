@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aymwvn - Cybersecuirty engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Aymen <span>CSE </span></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+    </header>
+    <section id="home" class="home-section animate">
+        <div class="intro">
+            <h1>HELLO, I'M A</h1>
+            <div id="typing-container" class="typing-container">
+                <span id="typing-text"></span><span class="cursor">|</span>
+            </div>
+            <p>Hi, I'm Aymen Boualam, a 19-year-old Cyber Secuirty Engineer/Analyst from Morocco.</p>
+            <p>Let's build amazing web experiences together!</p><br>
+            <div class="btn-group">
+                <a href="#hire" class="read-btn">Hire</a>
+                <a href="#contact" class="read-btn">Contact</a>
+            </div>
+        </div>
+        <div class="profile-pic">
+            <img src="pic.jpg" alt="Mark Gray">
+        </div>
+    </section>
+    <section id="about" class="about-section animate">
+        <div class="content">
+            <h2>About <span>Me</span></h2>
+            <p>Aymane Boualam, a 18 years old cybersecuirty student part time, Currently pursuing my degree in cybersecurity, I have developed a solid foundation in network security, risk management, and threat analysis. Alongside my studies, I work part-time to gain practical experience in the field, enhancing my skills in real-world scenarios. I am eager to learn and contribute to innovative security solutions while staying updated on the latest trends and threats in cybersecurity.</p><br>
+            <div class="container">
+                <h2>My <span>Profile</span></h2>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="showTab('skills')">Skills</button>
+                    <button class="tab-btn" onclick="showTab('education')">Education</button>
+                    <button class="tab-btn" onclick="showTab('certificates')">Certificates</button>
+                </div>
+    
+                <div class="content">
+                    <div id="skills" class="tab-content active">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Cybersecurity</li>
+                            <li>JavaScript & React</li>
+                            <li>Python & Machine Learning</li>
+                            <li>HTML & CSS</li>
+                            <li>Linux & Networking</li>
+                            <li>Database Management</li>
+                        </ul>
+                    </div>
+    
+                    <div id="education" class="tab-content">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="year">2024</span>
+                                <div class="content">
+                                    <h4>Master's in Cybersecurity</h4>
+                                    <p>University of XYZ - Focused on ethical hacking, network security, and cryptography.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2021</span>
+                                <div class="content">
+                                    <h4>Bachelor's in Computer Science</h4>
+                                    <p>University of ABC - Studied software engineering, algorithms, and data structures.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2018</span>
+                                <div class="content">
+                                    <h4>High School Diploma</h4>
+                                    <p>XYZ High School - Graduated with honors, excelling in mathematics and computer science.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="certificates" class="tab-content">
+                        <h3>Certificates</h3>
+                        <ul>
+                            <li>Certified Ethical Hacker (CEH) - 2023</li>
+                            <li>CompTIA Security+ - 2022</li>
+                            <li>Google IT Support Professional Certificate - 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services-section animate">
+        <h2>Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Backend Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects-section animate">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus, voluptatem.</p>
+                <a href="#review-project1" class="btn">Review Project</a>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus, voluptatem.</p>
+                <a href="#review-project2" class="btn">Review Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section animate">
+        <h2>Contact <span>Me</span></h2>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="jsb.js"></script>
+</body>
+</html>
