@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar .logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .navbar .logo span {
+    background: linear-gradient(to right, red, orange);
+    color: #000000;
+    border-radius: 1vw;
+    display: inline-block;;
+  }
+  
+  .navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: orange;
+  }
+  
+  .navbar .contact-btn {
+    padding: 10px 20px;
+    background: linear-gradient(to right, red, orange);
+    border: none;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .contact-btn:hover {
+    background: linear-gradient(to right, orange, red);
+  }
+  a.read-btn {
+    padding: 10px 20px;
+    background: linear-gradient(to right, red, orange);
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a.read-btn:hover {
+    background: linear-gradient(to right, orange, red);
+}
+ 
+
+  .home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .home-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .home-section .intro h1 span,
+  .home-section .intro h2 span {
+    color: orange;
+  }
+  
+  .profile-pic img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid orange;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-pic img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.7);
+  }
+  
+  .about-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #121212;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .about-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .about-section h2 span {
+    color: orange;
+  }
+  .services-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .services-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .services-section .service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .services-section .card {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .services-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.7);
+  }
+  
+  .projects-section {
+    background-color: #000;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .projects-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background-color: #111;
+    border: 2px solid orange;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.8);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: orange;
+  }
+  
+  .project-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .project-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .project-card .btn:hover {
+    background-color: #fff;
+    color: orange;
+  }
+  
+  
+  .contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .contact-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .contact-section h2 span {
+    color: orange;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form .form-group {
+    position: relative;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #fff;
+  }
+  
+  .contact-form .btn {
+    background-color: orange;
+    color: #000;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #fff;
+    color: orange;
+    transform: scale(1.05);
+  }
+  .typing-container {
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+    font-family: Arial, sans-serif;
+    display: flex;
+    text-transform: uppercase;
+  }
+  .fixed-text {
+    color: white;
+}
+    .cursor {
+        font-weight: bold;
+        color: orange;
+        animation: blink 0.7s step-end infinite;
+    }
+    #typing-text {
+        background: linear-gradient(to right, red, orange);
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        color: transparent;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    
+    .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .tab-btn {
+        background: linear-gradient(to right, red, orange);
+        border: none;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .tab-btn:hover {
+        background-color: #ddd;
+    }
+    
+    .tab-btn.active {
+        background: linear-gradient(to right, red, orange);
+        border: none;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    ul li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 5px;
+        color: #34495e;
+    }
+    
+    .timeline {
+        position: relative;
+        padding-left: 30px;
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .timeline-item .year {
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: absolute;
+        left: -50px;
+        top: 0;
+        color: #2980b9;
+    }
+    
+    .timeline-item .content {
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 4px solid #2980b9;
+    }
+    
+    .timeline-item .content h4 {
+        font-size: 1.3rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+    
+    .timeline-item .content p {
+        font-size: 1rem;
+        color: #7f8c8d;
+    }
+    @media (max-width: 768px) {
+        .tab-btn {
+            padding: 8px 15px;
+            font-size: 1rem;
+        }
+    
+        .timeline-item .year {
+            left: 0;
+            top: -10px;
+            font-size: 1.2rem;
+        }
+    
+        .timeline-item .content {
+            padding: 15px;
+        }
+    
+        .skills ul li {
+            font-size: 1rem;
+        }
+    }
